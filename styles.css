@@ -137,6 +137,66 @@ nav {
     line-height: 1.6;
 }
 
+/* Hero wrapper for side-by-side layout */
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ensure hero content takes appropriate space */
+.hero-content {
+    flex: 0 0 60%;
+}
+
+/* -------------------- Enhanced Hero Image Styles -------------------- */
+
+/* Style for the hero image container */
+.hero-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* optional spacing */
+    margin-left: 50px; /* Adjust margin as needed to push the image further right */
+    height: 100%;  /* New: ensures the container is full height */
+}
+
+/* Style for the hero image with grayscale effect */
+.hero-image img {
+    /* Return to original height of 50% so the entire image is visible */
+    height: 50%;
+    /* Ensure image does not exceed container's height */
+    max-height: 100%;
+    width: auto;
+    /* Replace invalid object-fit value with 'contain' so the entire image is visible without cropping */
+    object-fit: contain;
+    
+    filter: grayscale(100%);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    animation: slideIn 1s ease-out forwards;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Add an interactive hover effect for modern touch */
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Define keyframes for slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .section {
     padding: 60px 0;
 }
@@ -836,6 +896,10 @@ footer {
         padding: 20px 0;
     }
     
+    .hero-image {
+        display: none;
+    }
+    
     .nav-links.active {
         right: 0;
     }
@@ -850,6 +914,15 @@ footer {
     
     .hero h1 {
         font-size: 2.5rem;
+    }
+    
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 20px;
     }
     
     .section-title {
