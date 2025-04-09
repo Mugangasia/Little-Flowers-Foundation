@@ -165,25 +165,15 @@ nav {
 
 /* Style for the hero image with grayscale effect */
 .hero-image img {
-    /* Return to original height of 50% so the entire image is visible */
-    height: 50%;
-    /* Ensure image does not exceed container's height */
-    max-height: 100%;
     width: auto;
-    /* Replace invalid object-fit value with 'contain' so the entire image is visible without cropping */
-    object-fit: contain;
-    
-    filter: grayscale(100%);
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    animation: slideIn 1s ease-out forwards;
+    height: 100%; /* New: ensures the image fills the container height */
+    max-width: 100%; /* New: ensures the image does not overflow the container */
+    object-fit: contain; /* New: maintains aspect ratio while covering the container */   
+    filter: grayscale(100%); /* New: applies grayscale effect */
     transition: transform 0.3s ease;
-}
+    /* Increase the size of image zoomed in */
+    transform: scale(2.0); /* New: slightly zooms in the image */}
 
-/* Optional: Add an interactive hover effect for modern touch */
-.hero-image img:hover {
-    transform: scale(1.05);
-}
 
 /* Define keyframes for slide-in animation */
 @keyframes slideIn {
