@@ -35,27 +35,31 @@ dropdownParents.forEach(parentLink => {
     });
 });
 
-// Scroll animations
+// Scroll animations with debouncing for better performance
+let debounceTimer;
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 100) {
-        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
-    } else {
-        header.style.boxShadow = 'none';
-    }
-    
-    // Reveal elements on scroll
-    const revealElements = document.querySelectorAll('.mission-card, .value-item, .area-card, .help-card');
-    
-    revealElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        
-        if (elementTop < windowHeight - 100) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+            header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.boxShadow = 'none';
         }
-    });
+        
+        // Reveal elements on scroll
+        const revealElements = document.querySelectorAll('.mission-card, .value-item, .area-card, .help-card');
+        
+        revealElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementTop < windowHeight - 100) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    }, 50); // 50ms delay to balance responsiveness and performance
 });
 
 // Initialize animation styles

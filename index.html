@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Flower Foundation</title>
+    <meta name="description" content="Little Flower Foundation is dedicated to creating meaningful change through compassion, education, and sustainable support.">
+    <link rel="canonical" href="https://www.littleflowerfoundation.org/index.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Little Flower Foundation">
+    <meta property="og:description" content="Empowering vulnerable communities with compassion and sustainable support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.littleflowerfoundation.org">
+    <meta property="og:image" content="path/to/og-image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Little Flower Foundation">
+    <meta name="twitter:description" content="Empowering vulnerable communities with compassion and sustainable support.">
+    <meta name="twitter:image" content="path/to/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for Organization (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Little Flower Foundation",
+      "url": "https://www.littleflowerfoundation.org",
+      "logo": "https://www.littleflowerfoundation.org/path/to/logo.png",
+      "description": "A nonprofit organization dedicated to creating meaningful change in the lives of vulnerable individuals and communities through compassion, education, and sustainable support."
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -55,9 +84,18 @@
                 <h2 class="section-title">About Us</h2>
                 <p class="section-subtitle">The Little Flower Foundation is a nonprofit organization dedicated to creating meaningful change in the lives of vulnerable and underserved individuals and communities.</p>
             </div>
-            <div class="about-content">
-                <p>At the heart of the Little Flower Foundation's mission is the belief in the inherent dignity and worth of every person. Through strategic partnerships, community engagement, and a wide range of impactful programs, we strive to provide access to essential services, resources, and opportunities that uplift individuals, strengthen communities, and create lasting positive change.</p>
-                <p>Whether responding to urgent humanitarian crises, providing educational scholarships, offering healthcare services, or advocating for the rights of marginalized groups, the Little Flower Foundation works tirelessly to support those in need. Guided by our core values of compassion, integrity, and service, we aim to build a world where all individuals can thrive, regardless of their circumstances.</p>
+            <div class="about-us-container">  
+                
+<!-- New container for two-column layout -->
+ 
+                <div class="about-image">
+                    <img src="images/african-kid-marketplace.jpg" alt="About Us Image">
+                </div>
+                <div class="about-text">
+                    <p>At the heart of the Little Flower Foundation's mission is the belief in the inherent dignity and worth of every person. Through strategic partnerships, community engagement, and a wide range of impactful programs, we strive to provide access to essential services, resources, and opportunities that uplift individuals, strengthen communities, and create lasting positive change.</p>
+                    <p>Whether responding to urgent humanitarian crises, providing educational scholarships, offering healthcare services, or advocating for the rights of marginalized groups, our work is guided by core values of compassion, integrity, and service.</p>
+                    <button class="cta-button">Read More</button>
+                </div>
             </div>
         </div>
     </section>
@@ -254,7 +292,7 @@
             
             <div class="blog-grid">
                 <div class="blog-featured">
-                    <div class="blog-image" style="background-image: url('/api/placeholder/600/400');"></div>
+                    <div class="blog-image" style="background-image: url('images/view-children-practicing-health-wellness-activity.jpg');"></div>
                     <div class="blog-content">
                         <div class="blog-date"><i class="far fa-calendar-alt"></i> April 5, 2025</div>
                         <h3 class="blog-title">New School Building Opens Doors to 300 Children in Rural Community</h3>
@@ -265,7 +303,7 @@
                 </div>
                 
                 <div class="blog-card">
-                    <div class="blog-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="blog-image" style="background-image: url('images/african-children-enjoying-life.jpg');"></div>
                     <div class="blog-content">
                         <div class="blog-date"><i class="far fa-calendar-alt"></i> March 28, 2025</div>
                         <h3 class="blog-title">Healthcare Program Reaches 5,000 Beneficiaries</h3>
@@ -367,6 +405,5 @@
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/fontawesome.min.js" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous"></script>
 </body>
 </html>

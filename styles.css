@@ -796,6 +796,14 @@ footer {
 }
 
 /* Responsive styles */
+@media screen and (min-width: 992px) {
+    /* Override the default container centering but only within the hero section */
+    .hero .container {
+        margin: 0; /* Remove auto centering */
+        padding-left: 50px; /* Ensure some left padding if needed (adjust as appropriate) */
+    }
+}
+
 @media screen and (max-width: 992px) {
     .blog-featured {
         grid-template-columns: 1fr;
@@ -907,4 +915,67 @@ footer {
 /* For mobile: Toggle dropdown when parent is active */
 .nav-links li.dropdown.active > .dropdown-menu {
     display: block;
+}
+
+/* 
+ * Team Social Icon Styles
+ * This section ensures that social icons in team cards are visible and have a hover effect.
+ */
+.team-social a {
+    color: var(--secondary); /* Set default icon color (purple) */
+    font-size: 20px; /* Adjust icon size as needed */
+    display: inline-block; /* Ensure transform effects work properly */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.team-social a:hover {
+    color: var(--primary); /* Change icon color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Optionally, if you want to add similar hover effects to footer social icons, you can include: */
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+/* New styles for the redesigned About Us section */
+.about-us-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive styling: stack the columns on smaller screens */
+@media screen and (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+    }
+    .about-image, .about-text {
+        width: 100%;
+    }
+    .about-text {
+        margin-top: 20px;
+    }
 }
