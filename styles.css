@@ -172,7 +172,7 @@ nav {
     filter: grayscale(100%); /* New: applies grayscale effect */
     transition: transform 0.3s ease;
     /* Increase the size of image zoomed in */
-    transform: scale(2.0); /* New: slightly zooms in the image */}
+    transform: scale(2.2); /* New: slightly zooms in the image */}
 
 
 /* Define keyframes for slide-in animation */
