@@ -19,10 +19,16 @@
                     Little Flower Foundation
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="team.html">Our Team</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#mission">Mission</a></li>
                     <li><a href="#values">Values</a></li>
                     <li><a href="#areas">Areas of Work</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#help">Get Involved</a></li>
                 </ul>
                 <button class="cta-button">Donate Now</button>
@@ -225,6 +231,105 @@
         </div>
     </section>
 
+    <section class="section" id="blog" style="background-color: #f9f5ff;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Blog</h2>
+                <p class="section-subtitle">Stories of impact, news updates, and insights from our work around the world.</p>
+            </div>
+            
+            <div class="blog-search">
+                <input type="text" placeholder="Search articles...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="blog-categories">
+                <span class="blog-category-filter active">All</span>
+                <span class="blog-category-filter">Success Stories</span>
+                <span class="blog-category-filter">Community Updates</span>
+                <span class="blog-category-filter">Education</span>
+                <span class="blog-category-filter">Healthcare</span>
+                <span class="blog-category-filter">Events</span>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-featured">
+                    <div class="blog-image" style="background-image: url('/api/placeholder/600/400');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> April 5, 2025</div>
+                        <h3 class="blog-title">New School Building Opens Doors to 300 Children in Rural Community</h3>
+                        <p class="blog-excerpt">After two years of construction and community collaboration, our new educational facility is now welcoming students. This school represents more than just classrooms—it's a beacon of hope and opportunity for an entire generation of children who previously had limited access to quality education.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        <span class="blog-category">Success Stories</span>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> March 28, 2025</div>
+                        <h3 class="blog-title">Healthcare Program Reaches 5,000 Beneficiaries</h3>
+                        <p class="blog-excerpt">Our mobile health clinics have now provided essential healthcare services to over 5,000 individuals across remote regions. Learn about the impact of this initiative.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <span class="blog-category">Healthcare</span>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> March 20, 2025</div>
+                        <h3 class="blog-title">Annual Fundraising Gala Raises Record Amount</h3>
+                        <p class="blog-excerpt">This year's fundraising event brought together supporters from across the country and raised a record $1.2 million to fund our educational initiatives for the coming year.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <span class="blog-category">Events</span>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> March 15, 2025</div>
+                        <h3 class="blog-title">From Orphan to Engineer: Maria's Inspiring Journey</h3>
+                        <p class="blog-excerpt">When Maria came to our foundation at age 8, she had lost everything. Today, at 24, she has graduated with honors in engineering and is giving back to her community.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <span class="blog-category">Success Stories</span>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> March 8, 2025</div>
+                        <h3 class="blog-title">Community Garden Initiative Takes Root</h3>
+                        <p class="blog-excerpt">Our new sustainable agriculture program is helping families grow their own nutritious food while teaching valuable skills and providing income opportunities.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <span class="blog-category">Community Updates</span>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('/api/placeholder/400/300');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> March 1, 2025</div>
+                        <h3 class="blog-title">New Educational Materials Distributed to 50 Schools</h3>
+                        <p class="blog-excerpt">Thanks to generous donations, we've provided updated textbooks, supplies, and learning tools to 50 underfunded schools, benefiting over 12,000 students.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <span class="blog-category">Education</span>
+                </div>
+            </div>
+            
+            <div class="blog-navigation">
+                <span class="blog-navigation-button"><i class="fas fa-chevron-left"></i></span>
+                <span class="blog-navigation-button active">1</span>
+                <span class="blog-navigation-button">2</span>
+                <span class="blog-navigation-button">3</span>
+                <span class="blog-navigation-button"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -241,6 +346,7 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <a href="#about">About Us</a>
+                    <a href="team.html">Our Team</a>
                     <a href="#mission">Our Mission</a>
                     <a href="#values">Core Values</a>
                     <a href="#areas">Areas of Work</a>
